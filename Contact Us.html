@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUSeine Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="dogie.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("5zf5qVBOanCDyYV3F");
+      })();
+    </script> 
+  </head>
+  <body>
+    <header>
+     <nav class="navbar">
+        <h2 class="logo"><a href="#">AU Seine</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label> 
+        <ul class="all-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Poptfolio.html">Portfolio</a></li>
+          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i> Munting Mapino Bulungan Seafood Naic,Cavite</p>
+            <p><i class="fas fa-phone"></i> 09155286585</p>
+            <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
+            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+            <p><i class="fas fa-globe"></i> auseine@gmail.com</p>
+            <p><i class="fas fa-facebook"></i> Au Seine</p>
+          </div>          
+        </div>
+       
+
+
+
+        <div class="col form">
+          <div class="container border mt-3 bg-light">
+            <div class="row">
+              <div class="col-md-6 p-5 bg-primary text-white">
+              </div>
+             <div class="form-container">
+              <div class="col-md-6 border-left py-3">
+                <h1 style="font-size: 40px; padding-right: 50px;">Contact form</h1>
+                <div class="form-group">
+                  <h5 for="name" style="font-size: 15px;">Name</h5>
+                  <input type="text" class="form-control"  id="name" placeholder="Enter name" style=" width: 400px; height: 40px; border: 1px solid white;" />
+                </div>
+                <div class="form-group">
+                  <h5 for="address" style="font-size: 15px;">Address</h5>
+                  <input type="address"  class="form-control" id="address"  placeholder="Enter Address" style=" width: 400px; height: 40px; border: 1px solid white;"/>
+                </div>
+                <div class="form-group">
+                  <h5 for="product" style="font-size: 15px;">Product Name</h5>
+                  <textarea class="form-control" id="product"   style=" width: 400px; height: 40px; border: 1px solid white;"rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <h5 for="kilo" style="font-size: 15px;">Kilo</h5>
+                  <input type="kilo"  class="form-control" id="kilo"  placeholder="Enter Kilo" style=" width: 400px; height: 40px; border: 1px solid white;"/>
+                </div>
+                <button type="submit" onclick="sendMail()" style="border-radius: 5px; border-color:#5e6168; width:100px; height: 30px; margin-top: 10px;">Submit </button>
+              </div>
+             </div>
+        </div>
+      </div>
+
+
+      
+
+
+    </section>
+
+    <footer>
+      <div>
+        <span>Copyright © 2023 All Rights Reserved</span>
+        <span class="link">
+            <a href="#">Home</a>
+            <a href="#contact">Contact</a>
+        </span>
+      </div>
+    </footer>
+
+
+    <script src="dogie.js"></script>
+  </body>
+</html>
